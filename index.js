@@ -33,7 +33,6 @@ async function runServerlessDeploy() {
 async function handler() {
   try {
     process.chdir('./Backend/serverless');
-    console.log(`Changed working directory to ${workingDirectory}`);
     await installServerlessAndPlugins()
     await runServerlessDeploy()
   } catch (error) {
