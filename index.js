@@ -32,7 +32,7 @@ async function runServerlessDeploy() {
 //  Runs all functions sequentially
 async function handler() {
   try {
-    process.chdir(workingDirectory);
+    process.chdir(./Backend/serverless);
     console.log(`Changed working directory to ${workingDirectory}`);
     await installServerlessAndPlugins()
     await runServerlessDeploy()
